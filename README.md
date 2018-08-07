@@ -7,3 +7,5 @@ Music-Player-master folder
 
 node-brainTree-TribalFirebase folder
 - Braintree using nodeJS with tribalmob's firebase cloud functions
+
+Note: In order for Braintree to work with tribalmob's firebase, the project must be link to billing.
