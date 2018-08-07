@@ -1,0 +1,52 @@
+extends ../layout
+
+block content
+  .wrapper: .checkout.container: .content
+    header
+      h1 Hi, #[br] Let's test a transaction for '#{item}'
+      p Make a test payment with Braintree using PayPal or a card
+
+    form#payment-form(action="checkouts/", method="post")
+      section
+        label(for="amount")
+          span.input-label Amount
+          .input-wrapper.amount-wrapper
+            input#amount(name="amount" type="tel" min="1" value="#{amount}")
+
+        .bt-drop-in-wrapper
+          #bt-dropin
+
+      input#nonce(type="hidden" name="payment_method_nonce")
+      input#item(type="hidden" name="item" value="#{item}")
+      input#device(type="hidden" name="device" value="#{device}")
+
+      button.button(type="submit")
+        span Test Transaction
+
+  script(src="https://js.braintreegateway.com/web/dropin/1.11.0/js/dropin.min.js")
+  script.
+    var form = document.querySelector('#payment-form');
+    var token = '#{clientToken}';
+
+    braintree.dropin.create({
+      authorization: token,
+      container: '#bt-dropin',
+      paypal: {
+        flow: 'vault'
+      }
+    }, function (createErr, instance) {
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        instance.requestPaymentMethod(function (err, payload) {
+          if (err) {
+            console.log('Error', err);
+            return;
+          }
+
+          // Add the nonce to the form and submit
+          document.querySelector('#nonce').value = payload.nonce;
+          form.submit();
+        });
+      });
+    });

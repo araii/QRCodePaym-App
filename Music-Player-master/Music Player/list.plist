@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+    <dict>
+        <key>artistName</key>
+        <string>Phil Colins</string>
+        <key>albumName</key>
+        <string>BUT SERIOUSLY</string>
+        <key>songList</key>
+        <array>
+            <string>In The Air Tonight</string>
+            <string>Separate Lives</string>
+            <string>You'll Be In My Heart</string>
+        </array>
+        <key>albumArtwork</key>
+        <string>Phil-Collins</string>
+    </dict>
+    <dict>
+        <key>artistName</key>
+        <string>Michael Jackson</string>
+        <key>albumName</key>
+        <string>THRILLER</string>
+        <key>songList</key>
+        <array>
+            <string>Baby Be Mine</string>
+            <string>Beat It</string>
+            <string>Billie Jean</string>
+        </array>
+        <key>albumArtwork</key>
+        <string>Michael-Jackson</string>
+    </dict>
+    <dict>
+        <key>artistName</key>
+        <string>Tina Turner</string>
+        <key>albumName</key>
+        <string>SIMPLY THE BEST</string>
+        <key>songList</key>
+        <array>
+            <string>I Don't Wanna Fight</string>
+            <string>Simply The Best</string>
+            <string>What's Love Got To Do With It</string>
+        </array>
+        <key>albumArtwork</key>
+        <string>Tina-Turner</string>
+    </dict>
+
+	<dict>
+		<key>artistName</key>
+		<string>ZZ Top</string>
+		<key>albumName</key>
+		<string>FANDANGO!</string>
+		<key>songList</key>
+		<array>
+			<string>Blue Jean Blues</string>
+			<string>La Grange</string>
+			<string>Tush</string>
+		</array>
+		<key>albumArtwork</key>
+		<string>ZZ-Top</string>
+	</dict>
+
+<dict>
+    <key>artistName</key>
+    <string>Led Zeppelin</string>
+    <key>albumName</key>
+    <string>THE SONG REMAINS THE SAME</string>
+    <key>songList</key>
+    <array>
+        <string>Black Dog</string>
+        <string>Immigrant Song</string>
+        <string>Whole Lotta Love</string>
+    </array>
+    <key>albumArtwork</key>
+    <string>Led-Zeppelin</string>
+</dict>
+
+<dict>
+    <key>artistName</key>
+    <string>The Clash</string>
+    <key>albumName</key>
+    <string>LONDON CALLING</string>
+    <key>songList</key>
+    <array>
+        <string>London Calling</string>
+        <string>Should I Stay Or Should I Go</string>
+        <string>The Guns Of Brixton</string>
+    </array>
+    <key>albumArtwork</key>
+    <string>The-Clash</string>
+</dict>
+
+	<dict>
+		<key>artistName</key>
+		<string>Jimi Hendrix</string>
+		<key>albumName</key>
+		<string>HEY JOE</string>
+		<key>songList</key>
+		<array>
+			<string>Cocaine</string>
+			<string>Purple Haze</string>
+			<string>Voodoo child</string>
+		</array>
+		<key>albumArtwork</key>
+		<string>Jimi-Hendrix</string>
+	</dict>
+
+</array>
+</plist>
